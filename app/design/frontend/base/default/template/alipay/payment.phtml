@@ -1,0 +1,204 @@
+ 
+<?php
+
+$alipay = Mage::getModel('alipay/payment');
+$has_jquery=$alipay->getConfigData('has_jquery');
+$has_jqueryui=$alipay->getConfigData('has_jqueryui');
+if(!$has_jquery){
+?>
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+
+<?php
+}
+if(!$has_jqueryui){
+?>
+<script src="http://libs.baidu.com/jqueryui/1.10.2/jquery-ui.min.js"></script>
+
+<?php
+}
+?>
+
+<script type="text/javascript">
+jQuery.noConflict();
+jQuery(function() {
+	jQuery( "#paycenter_area" ).tabs();
+});
+</script>
+<?php
+
+
+$orderId = (int) $this->getRequest()->getParam('order_id');
+if (!$orderId) {
+    $session = Mage::getSingleton('checkout/session');
+    $_order = Mage::getModel('sales/order');
+
+    $_order->loadByIncrementId($session->getLastRealOrderId());
+}else{
+
+    
+    $_order =Mage::getModel('sales/order')->load($orderId);
+    
+    $order_cid=$_order->getCustomerId();
+    $current_cid=0;
+    if(Mage::helper('customer')->getCustomer()){
+        $current_cid=Mage::helper('customer')->getCustomer()->getId();
+    }
+    
+    if ($current_cid!=$order_cid)
+    {
+        echo '订单错误，请联系我们';
+        exit();
+    }
+}
+if (!$_order->getId())
+{
+    echo '订单错误，请联系我们';
+    exit();
+}
+?>      
+<div class="shortcut_wrapper">
+    <div class="shortcut_price">
+        <p class="price">支付金额：<span class="red"><?php echo $this->helper('checkout')->formatPrice($_order->getGrandTotal()) ?> </span></span></p>
+        <p><span>类型：<span id="lblType">订单</span></span><span>编号：<span id="lblNo"><?php echo ($_order->getRealOrderId()) ?> </span></span></p>
+    </div>
+          
+    <div class="shortcut_content shortcut_content02">
+        <div id="paycenter_area">
+            <ul style="border-bottom: 1px solid #ff8e42;height: 38px;">
+                <li><a href="#tabs-2"><h4><span  >网上银行(信用卡)</span></h4></a></li>
+                <li><a href="#tabs-3"><h4><span  >网上银行(借记卡)</span></h4></a></li>
+                <li><a href="#tabs-4"><h4><span  >网上银行(企业网银)</span></h4></a></li>
+                <li><a href="#tabs-1"><h4><span  >支付平台</span></h4></a></li>
+            </ul>
+            <div style="clear:both;"></div>
+              
+            
+            <div id="tabs-1" >
+
+                    <div class="shortcut_bank_list list_deep">
+                        <h5><span class="icon"></span><span>支付平台</span></h5>
+                        <div class="shortcut_bank_box"> 
+                        <ul  class="shortcut_bank_table shortcut_bank_web">
+
+                        <li class="bank_item">
+                        <p class="bank_select" ><input type="radio" name="bank" checked="checked"><span class="pic"><img src="<?php echo $this->getSkinUrl('images/alipay.gif'); ?>" id="Repeater2_ctl03_imgBank2" width="113" height="36"></span></p>
+                        <p class="hint">中国最大的第三方支付方式</p>                  
+                        </li>      
+                        </ul>
+                        </div>
+                    </div>
+                    <button type="submit" title="下订单" class="button btn-checkout" onclick="go_pay('<?php echo $this->getUrl('alipay/payment/redirect'); ?>');"><span><span>下订单</span></span></button>
+                    <?php
+                    //echo $this->getChildHtml('redirect');
+                    ?>
+            </div>   
+            <div id="tabs-2" >
+
+                    <div class="shortcut_bank_list list_deep">
+                        <h5><span class="icon"></span><span>网上银行(信用卡）</span></h5>
+                        <div class="shortcut_bank_box"> 
+                        <ul  class="shortcut_bank_table shortcut_bank_web">
+
+
+<?php
+
+
+$banks_options = Mage::getModel("alipay/source_banks")->getMixed();
+foreach($banks_options as $banks_option){
+?>
+
+                        <li class="bank_item">
+                        <p class="bank_select" ><input type="radio" onclick="setBank('<?php echo $banks_option['value']; ?>');" name="bank"  value="<?php echo $banks_option['value']; ?>"><span class="<?php echo $banks_option['label']; ?> icon"></span></p>                  
+                        </li>  
+<?php
+}
+
+?>                       
+                        </ul>
+                        </div>
+                    </div>
+                    <button type="submit" title="下订单" class="button btn-checkout" onclick="go_pay('<?php echo $this->getUrl('alipay/payment/redirect'); ?>',globalbank);"><span><span>下订单</span></span></button>
+                   
+            </div>   
+            <div id="tabs-3" >
+
+                    <div class="shortcut_bank_list list_deep">
+                        <h5><span class="icon"></span><span>网上银行(借记卡）</span></h5>
+                        <div class="shortcut_bank_box"> 
+                        <ul  class="shortcut_bank_table shortcut_bank_web">
+
+
+<?php
+
+
+$banks_options = Mage::getModel("alipay/source_banks")->getDebits();
+foreach($banks_options as $banks_option){
+?>
+
+                        <li class="bank_item">
+                        <p class="bank_select" ><input type="radio" onclick="setBank('<?php echo $banks_option['value']; ?>');" name="bank"  value="<?php echo $banks_option['value']; ?>"><span class="<?php echo $banks_option['label']; ?> icon"></span></p>                  
+                        </li>  
+<?php
+}
+
+?>                       
+                        </ul>
+                        </div>
+                    </div>
+                    <button type="submit" title="下订单" class="button btn-checkout" onclick="go_pay('<?php echo $this->getUrl('alipay/payment/redirect'); ?>',globalbank);"><span><span>下订单</span></span></button>
+                   
+            </div>    
+            <div id="tabs-4" >
+
+                    <div class="shortcut_bank_list list_deep">
+                        <h5><span class="icon"></span><span>网上银行(借记卡）</span></h5>
+                        <div class="shortcut_bank_box"> 
+                        <ul  class="shortcut_bank_table shortcut_bank_web">
+
+
+<?php
+
+
+$banks_options = Mage::getModel("alipay/source_banks")->getCompany();
+foreach($banks_options as $banks_option){
+?>
+
+                        <li class="bank_item">
+                        <p class="bank_select" ><input type="radio" onclick="setBank('<?php echo $banks_option['value']; ?>');" name="bank"  value="<?php echo $banks_option['value']; ?>"><span class="<?php echo $banks_option['label']; ?> icon"></span></p>                  
+                        </li>  
+<?php
+}
+
+?>                       
+                        </ul>
+                        </div>
+                    </div>
+                    <button type="submit" title="下订单" class="button btn-checkout" onclick="go_pay('<?php echo $this->getUrl('alipay/payment/redirect'); ?>',globalbank);"><span><span>下订单</span></span></button>
+                   
+            </div>    
+        </div>
+    </div>
+  <div class="bottom_hint">
+    <div><a href="<?php echo $this->getUrl('sales/order/view',array('order_id'=>$_order->getId())); ?>" target="_blank">查看订单详情&gt;&gt;</a></div>
+    <div class="title">付款遇到问题：</div>
+    <p>联系我们 <span class="gray"> 客服帮助您解决支付过程中遇到的困难 <a href="<?php echo $this->getUrl('contacts'); ?>" target="_blank" >客服中心</a> </span></p>
+    <div><a href="http://help.alipay.com/lab/index.htm" target="_blank">支付宝帮助中心&nbsp;&gt;&gt;</a></div>
+  </div>
+</div>
+
+<div class="popup-wrap popup-orderEnd" style="display:none;" id="go_pay_window">
+    <div class="popup-title">
+        <h3>温馨提示</h3>
+        <a class="btn-popup-close" href="javascript:window_close();"></a>
+    </div>
+    <div class="popup-cont">
+        <p><i class="icon icon-warn-normal"></i>请您到新打开网银页面上进行支付，支付完成前请不要关闭该窗口。</p>
+        <p class="btn-bar">
+            <button class="button btn-checkout" id="pay_suc_link" onclick="javascript:window_close();"><span><span>重新支付</span></span></button>
+            <button class="button btn-checkout" id="pay_suc_link" onclick="setLocation('<?php echo $this->getUrl('sales/order/view',array('order_id'=>$_order->getId())); ?>');"><span><span>支付完成</span></span></button>
+            <div style="text-align:right;"><br />
+            <a class="button btn-checkout" id="pay_fail_link" onclick="setLocation('<?php echo $this->getUrl('contacts'); ?>');">支付遇到问题</a>
+            </div>
+        </p>
+    </div>
+</div>
