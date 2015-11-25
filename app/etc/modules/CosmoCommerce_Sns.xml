@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <CosmoCommerce_Sns>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <CosmoCommerce_Updates/>
+            </depends>
+        </CosmoCommerce_Sns>
+    </modules>
+</config> 

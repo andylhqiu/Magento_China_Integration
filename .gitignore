@@ -4,5 +4,6 @@
 var/session
 app/etc/local.xml
 var/cache
-
+errors/local.xml
+var/report
 
