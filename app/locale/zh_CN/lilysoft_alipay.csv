@@ -1,0 +1,28 @@
+"Thank you for your purchase!","感谢您的购买"
+"You will be redirected to Alipay website when you place an order.","当您提交订单之后你将会被重定向到支付宝的网站进行支付。"
+"alipay","支付宝"
+"Alipay","支付宝"
+"Your order # is: %s.","您的订单 # is: %s."
+"You will receive an order confirmation email with details of your order and a link to track its progress.","您将收到一封带有订单详情和操作链接的确认邮件"
+"Click <a href="%s" onclick="this.target=\'_blank\'">here to print</a> a copy of your order confirmation.","点击<a href="%s" onclick="this.target=\'_blank\'">此处</a>打印"
+"You will receive an order confirmation e-mail, the confirmation email will be sent to your mailbox","您将收到一封订单确认邮件，确认邮件将被发送到您的收件箱"
+"The total amount of your order","订单总计"
+"Method of payment you choose","您选择的支付方式"
+"To pay","去支付"
+"Your billing agreement # is: %s.","您的结算协议 # is: %s."
+"Your recurring payment profiles:","您的定期付款概况:"
+"Payment profile # %s: "%s","支付个人资料编号 # %s: "%s"
+Alipay Login,支付宝登陆
+Service Type,服务类型
+Use guarantee trade interface,使用保障交易界面
+Use both interfaces,同时使用保障交易界面和直接支付交易界面
+Use direct pay trade interface,使用直接支付交易界面
+Gateway,入口
+Security Code,安全码
+ Seller Email,卖家电邮
+ Partner ID,伙伴ID
+Transport,传送
+Alipay Payment,支付宝付款
+ Sort order,排序
+ Your order has been received,你的订单已被收到
+ Click <a href="%s" onclick="this.target='_blank'">here to print</a> a copy of your order confirmation.,点击<a href="%s" onclick="this.target='_blank'">这里</a> 打印你的订单确认副本。

@@ -1,0 +1,5 @@
+Token Status Change Email Template,令牌状态改变的电子邮件模板
+Integer. Launch cleanup in X OAuth requests. 0 (not recommended) - to disable cleanup,整数。在X OAuth请求启动清理。0（不推荐）-禁用清理
+Cleanup entries older than X minutes.,清理以前的实体超过x分钟
+You have no applications.,你还没有应用。
+My Applications,我的应用

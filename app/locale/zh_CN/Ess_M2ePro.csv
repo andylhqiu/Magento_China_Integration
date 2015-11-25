@@ -1,0 +1,307 @@
+enabled,启用
+disabled,禁用
+Sell on Multi-Channels,多渠道销售
+Properties,属性
+Recommended Value,推荐值
+Current Value,当前值
+Magento Version,magento版本
+PHP Version,PHP版本
+Memory Limit,内存限制
+Mb,MB
+Max Execution Time,最大执行时间
+sec,s
+JSON support,JSON支持
+CURL support,CURL支持
+GMP support,GMP支持
+Welcome to M2E Pro - Magento Multi-Channels Integration!,欢迎到M2E专业版 - Magento的多渠道整合！
+System Requirements,系统要求
+Start Configuration,开始配置
+Sell On Multi-Channels,多渠道销售
+About,关于
+Support,支持
+Video Tutorials,视屏教程
+Documentation,手册
+Skip Wizard,跳过向导
+Magento Info,magento信息
+Edition,版本
+Community,社区版
+Version,版本
+Module Info,模块信息
+Version (revision),版本（修订）
+License Info,许可信息
+License Key,许可证秘钥
+Location Info,位置信息
+Domain,域名
+System Info,系统信息
+PHP Info,PHP信息
+Server API,服务器API
+Cron Info,Cron信息
+"We recommend to set up your cron job to be run every 5 minutes (e.g. */5 * * * *).","我们建议您将您的cron作业运行每5分钟（如* /5****）。"
+Last Run,上次运行
+PHP command,PHP命令
+GET command,获取命令
+Database Tables,所有数据表
+Table,表
+Records,记录
+eBay,易贝
+Amazon (Beta),亚马逊（Beta版）
+Rakuten.com (Beta),Rakuten.com (Beta版)
+Play.com (Beta),Play.com (Beta版)
+Database Summary,数据库概要
+Total Tables,总共表数目
+Total Module Tables,模块表数目
+Total Module Records,模块记录数目
+MySQL Info,MySQL信息
+Database Name,数据库名字
+Tables Prefix,表前缀
+Connection Timeout,连接超时
+Wait Timeout,等待超时
+Hide Block,隐藏区块
+Show Tips,显示提示
+Hide Tips,隐藏提示
+Configuration Wizard (Magento Multi-Channels Integration),配置向导（Magento的多渠道整合）
+Set up Cron Job using PHP,使用PHP设置cron作业
+Set up Cron Job using GET,使用GET设置cron作业
+Confirm,确认
+Cron Job Set Up,cron作业设置
+License Set Up,许可证设置
+"Set up a cron job to run every 5 minutes (e.g. */5 * * * *) to enable automatic work of the extension.<br/>
+            Otherwise, some processes will not work (i.e. synchronization tasks, logs cleaning).","设置一个cron作业运行每5分钟（如* /5****）启用自动工作扩展。<br/>否则，一些程序将无法正常工作（即同步任务，日志清洗）。"
+"You need to specify the License Key. <br/>
+            <strong>Note:</strong> M2E Pro does not work without activation.","您需要指定的许可证密钥。<br/><strong>注：</strong>M2E Pro没有工作，没有激活。"
+Proceed,继续
+"The <span style=""text-decoration: underline;"">eBay component</span>, its upgrades and support are free according to eBay / Magento Partner Agreement. And they will stay free until the partner agreement is active.<br/>","<span style=""text-decoration: underline;"">易趣组件</span>，升级和支持免费易趣/ Magento的合作伙伴协议。他们将免费入住，直到合作伙伴协议失效。<br/>"
+The license key has been successfully updated.,许可证密钥已成功更新。
+License Data,许可证数据
+Enter,输入
+Get License Key,获取许可证秘钥
+Complete This Step,完成此步骤
+License Validation,许可证验证
+Access,访问
+Current Status,目前状态
+Live License,激活许可证
+Save And Complete This Step,保存并完成这一步
+This section contains global settings of M2E Pro and allows you to manage them in your opinion.,本节包含全局设置的M2E Pro，让你来管理它们在您看来。
+Channel Settings,改变配置
+eBay channel status.,eBay的通道状态。
+Amazon channel status.,亚马逊通道状态。
+Rakuten,乐天
+Rakuten.com channel status.,乐天的通道状态。
+Play.com channel status.,Play.com通道状态。
+Rakuten.de,Rakuten.de
+Rakuten.de channel status.,Rakuten.de通道状态。
+Default Channel,默认通道
+The tab of which channel must be opened by default.,默认情况下，该选项卡的通道必须打开。
+Interface Settings,接口设置
+Products Thumbnails,产品缩略图
+Shows / Hides products thumbnails on Add Products and View Listing pages.,显示/隐藏产品添加产品查看列表页的缩略图。
+Help Blocks,帮助块
+Shows / Hides all Help blocks.,显示/隐藏帮助块。
+Restore All Helps,还原所有帮助
+Negative Feedbacks,负反馈
+Notifies when a new negative feedback was received.,通知当一个新的负反馈已收到。
+Notifies if cron is not run more than 12 hours.,如果cron不能运行超过12小时通知。
+Configuration Wizard (Magento eBay Integration),配置向导（Magento的易趣集成）
+You need to choose the marketplaces you are going to sell on.,你需要选择你要出售的街市。
+Marketplaces Set Up,交易市场设置
+America,美洲
+Canada,加拿大
+Canada (French),加拿大（法语）
+Asia / Pacific,亚洲/太平洋地区
+Australia,澳大利亚
+Hong Kong,香港
+India,印度
+Malaysia,马来西亚
+Philippines,菲律宾
+Singapore,新加坡
+Europe,欧洲
+Austria,奥地利
+Belgium (Dutch),比利时（荷兰语）
+Belgium (French),比利时（法文）
+France,法国
+Germany,德国
+Ireland,爱尔兰
+Italy,意大利
+Netherlands,荷兰
+Poland,波兰
+Switzerland,瑞士
+Sweden,瑞典
+Spain,西班牙
+Marketplaces,交易市场
+You must select at least one marketplace you will work with.,您必须选择至少一个你将使用的市场。
+Marketplaces settings have been saved.,交易市场设置已保存。
+Synchronization Set Up,同步设置
+Setting up preferences of data synchronization.,设置数据同步喜好。
+Skip,跳过
+Synchronization,同步
+Templates Synchronization,模板同步
+Orders Synchronization,订单同步
+"Imports and synchronizes eBay Orders for accounts,<br/>which have enabled Import eBay Orders in their<br/>Accounts settings.","进口同步易趣账户，订单<br/>他们<br/>帐户设置导入eBay的订单已启用。"
+Feedbacks Synchronization,反馈同步
+Imports buyers' feedbacks and automatically sends<br/>Auto Responses according to eBay Accounts settings.,进口买家的反馈信息并自动发送<br/>根据eBay帐户设置自动响应。
+3rd Party Listings Synchronization,第三方房产同步
+"Imports and synchronizes 3rd Party Listings for eBay<br/>accounts, which have enabled Import 3rd Party Listings<br/>in their Accounts settings.","进口并同步对eBay第三方房产<br/>帐户，这使得导入第三方<br/>房源在他们帐户设置。"
+Synchronization Settings,同步设置
+Settings for 3rd Party Listings Synchronization.,第三方人数同步设置。
+Updates and synchronizes eBay Listings according to<br/>Synchronization Templates' rules.,更新和同步易趣人数根据<br/>同步模板规则。
+Save Settings,保存设置
+3rd Party Synchronization Set Up,第三方同步设置
+Source,资源
+Synchronization Source,资源同步
+Not Set (not changeable on eBay),没有设置（不改变eBay）
+Product QTY,产品数量
+Custom Attribute,自定义属性
+Updates quantity on eBay Listing with mapped Magento product quantity.,更新数量eBay上市映射Magento的产品数量。
+Product Price,产品价格
+Final Price,最终价格
+Updates title on eBay Listing with mapped Magento product title.,更新标题eBay上市映射Magento的产品称号。
+Subtitle,副标题
+Updates eBay Listing subtitle.,更新易趣清单副标题。
+Product Description,产品描述
+Product Short Description,产品简述
+Updates description on eBay Listing with mapped Magento product description.,更新说明eBay清单映射Magento的产品说明。
+Revise Rules,修改规则
+"This section contains list of product details, which changes you want to be automatically reflected on eBay.","本节包含产品的细节，要更改自动反映eBay列表。"
+Partial Revise,部分修改
+Automatically updates quantity on eBay listing(s) when the source of quantity is changed.,自动更新数量eBay上市（次）当源的数量变化。
+Item Price,项目价格
+Automatically updates price on eBay listing(s) when the source of price is changed.,源价格变化时自动更新价格eBay上市（次）。
+Item Title,项目标题
+Automatically updates title on eBay listing(s) when the source of title is changed.,自动更新标题eBay上市当源改变所有权。
+Item Subtitle,项目副标题
+Automatically updates subtitle on eBay listing(s) when the source of subtitle is changed.,自动更新源的副标题时副标题eBay上市（次）改变。
+Item Description,项目描述
+Automatically updates description on eBay listing(s) when the source of description is changed.,自动更新说明时eBay上市描述的源变化。
+Relist Rules,重新登录规则
+Relist Action,重新登录操作
+Enables/Disables the Relist action for the 3rd Party Listings.,启用/禁用第三方房产重新登录行为。
+Relist When Stopped Manually,当手动停止重新登录
+Stop Rules,停止规则
+Automatically relists item(s) after it has been stopped manually within M2E Pro.,自动重新列出项目后它已被手动停止M2E专业版。
+Synchronize Data,同步数据
+"Updates Title, Subtitle, Description, Price and QTY on eBay 3rd Party Listings.<br/>If <i>No</i> is selected, eBay 3rd Party Listing(s) with existing data on eBay is relisted.","更新标题，副标题，描述，价格和数量eBay第三方房产。<br/>如果<i>没有</i>被选中时，eBay的第三方清单（次）与现有的数据eBay重新上市。"
+Relist Conditions,重新登录条件
+Product Status at which the item(s) have to be relisted.,产品状态项目必须重新提交。
+Stock Availability at which the item(s) have to be relisted.,项目必须重新提交。
+Item QTY,项目数量
+Product(s) quantity at which the item(s) have to be relisted.,产品数量项目必须重新提交。
+Stop Conditions,停止条件
+Automatically stops item(s) if its status has been changed to 'Disabled' in Magento.,如果其状态在Magento中已更改为“已禁用”，项目自动停止。
+Stop When Status Disabled,当状态不可用时停止
+Stop When Out Of Stock,当缺货时停止
+Automatically stops item(s) if its stock availability has been changed to 'Out of Stock' in Magento.,在Magento中如果其库存量已更改为'出来的股票，项目自动停止。
+Stop When Item QTY Is,停止与产品数量
+No Action,无条件
+Less or Equal,小于等于
+Between,之间
+Automatically stops item(s) if its Magento quantity has been changed and meets the conditions.,magento数量改变且符合条件时停止。
+This section includes settings where the values for synchronization have to be taken from. ,本节包括设置都必须考虑从值同步。
+"Attention! The Cron job is not running at the moment. The Amazon/Rakuten.com/Play.com Integration DOES NOT WORK without automatic task scheduled by cron job. <br/>You can check this %sarticle%s to get better idea why cron job is mandatory. The command for cron job for your server environment can be found %shere%s.","注意！当前时刻时刻cron作业没有运行。通过cron作业自动调度任务的亚马逊/ Rakuten.com/ Play.com集成没有工作。 <br/>为什么cron作业是必需的的，您可以查看这的％sarticle％s的获得更好的主意。您的服务器环境cron作业的命令，在％s这里％s可以发现。"
+Accounts Set Up,账户设置
+Adding your eBay accounts to M2E Pro extension.,添加您的eBay帐户M2E专业扩展。
+Title or identifier of eBay account for your internal use.,供内部使用的标题或eBay帐户的标识符。
+Production (Live eBay),生产（即时​​易趣）
+Sandbox (Test eBay),沙盒（测试易趣）
+Environment of eBay account.,eBay帐户的环境。
+Token,令牌
+Grant Access,授予连接
+Get Token,获取令牌
+"The  operation of getting token is limited to 5 minutes by eBay. If you exceed it, you should start getting token again.","获取标记的操作被易趣限制在5分钟。如果超过的话，你应该开始再次获取令牌。"
+Activated,激活
+Save And Continue Edit,保存并继续编辑
+"There is a possibility of adding eBay account in Production (Live eBay) or Sandbox (Test eBay) mode.<br/><br/>
+    <b>Note:</b> You cannot use your Production eBay account for the Sandbox environment and vice versa. To register the Sandbox account go to <a href=""http://www.developer.ebay.com"" target=""_blank"">www.developer.ebay.com</a><br/>
+    <br/>After completing the required information in General block, press the <span style=""text-decoration: underline;"">Get Token</span> button. You will be redirected to the eBay website. Sign-in and press <i>I Agree</i> to allow your eBay account connect to the M2E Pro.
+    <br/><br/>If Token has been successfully accepted, Activated status will turn to <i>Yes</i>. Do NOT leave the tab yet. Press <span style=""text-decoration: underline;"">Save And Continue Edit</span>.
+    <br/>After saving you will see the 3rd Party Listings block and additional setting tabs under Configuration in the left side menu. <br/>","有一种可能性，在生产中中加入eBay帐户（即时易趣）或沙盒测试易趣模式。<br/><br/>
+    <b>提示：</b> 你不能使用你的生产eBay帐户的沙中环境，反之亦然。要在<a href=""http://www.developer.ebay.com"" target=""_blank"">www.developer.ebay.com</a>注册沙盒帐户 <br/>
+    <br/>在完成常规块所需的资料后，点击<span style=""text-decoration: underline;"">获取令牌</span>您将被重定向到eBay网站。登录并点击 <i>同意</i> 按钮，让您中eBay帐户连接到M2E专业版。
+    <br/><br/>如果令牌已被成功地接受，活化状态将转为<i>是</i>。不要离开选项卡。点击 <span style=""text-decoration: underline;"">保存并继续编辑</span>。
+    <br/>保存后，在左侧菜单配置下。你会看到第三方房产块和额外设置选项卡 <br/>"
+Search Results,查找结果
+Knowledge Base,知识库
+Contact Support,联系支持
+Contact Name,联系姓名
+General Problem,一般问题
+Problem,问题
+Send Message,发送消息
+In M2E Pro global settings you are required to specify the channel(s) you are going to work with.,在M2E的专业版全局设置里面，你需要在指定的通道上工作。
+Settings Set Up,设定设置
+Manage Listings,管理列表
+Congratulations! (Magento Multi-Channels Integration),恭喜！（Magento的多渠道集成）
+You have set the main M2E Pro settings and now you have to set up the main settings of the chosen Channel(s).,您已设置主要M2E专业版设置，现在你必须设置的主要设置选择通道。
+Setting up settings to be able to sell on <strong>eBay</strong>.,设定设置后你可在<strong>易趣</strong>上销售产品。
+Listings,列表
+3rd Party Listings,第三方列表
+Communication,沟通
+My Messages,我的消息
+Selling Format Templates,销售格式模板
+Description Templates,描述模板
+General Templates,普通模板
+Synchronization Templates,同步模板
+Activity Logs,活动日志
+Listings Log,列表日志
+3rd Party Listings Log,第三方列表日志
+Synchronization Log,同步日志
+Orders Log,订单日志
+Accounts,账户
+Logs Clearing,日志清除
+General Log,普通日志
+Search Products,产品搜索
+Creation Date,创建时间
+Add Description Template,添加描述模板
+Update Date,更新时间
+"Set up Synchronization rules according to which auto and manual 3rd Party Listings Synchronization will be performed.
+                        <br/>
+                        <b>Note:</b> The 3rd Party Listings Synchronization has to be enabled in %s -> Configuration -> Synchronization to allow 3rd party listings to be imported from eBay.","Imposta le regole di sincronizzazione in base alle quali verrà effettuata la sincronizzazione automatica e manuale delle inserzioni di terze parti.
+                        <br/>
+                        <b>Nota:</b> la sincronizzazione delle inserzioni di terze parti deve essere abilitata in %s -> Configurazione -> Sincronizzazione per consentire l'importazione delle inserzioni di terze parti da eBay."
+"This section allows you to set up the Marketplaces you will work with.<br/>
+    Enable certain marketplaces and press the <span style=""text-decoration: underline;"">Save And Update</span> button in the top right corner, all necessary marketplace data will be downloaded and synchronized with M2E Pro settings.<br/><br/>
+    It is recommended to update marketplaces when any marketplace changes are announced. <br/><br/>
+    <b>Note:</b> Installation and update processes might be time-consuming, depending on the number of enabled marketplaces and your server environment. <br/>
+    ","本节允许您设置您将使用的交易市场。<br/>
+    启用某些市场并点击<span style=""text-decoration: underline;"">保存和升级</span>右上角的按钮，将所有必要的市场数据下载和与M2E专业设置同步。<br/><br/>
+    建议公布任何市场的变化时，更新交易市场。<br/><br/>
+    <b>提示：</b> 安装和更新过程可能是费时，这取决于功能的交易市场的数量和你的服务器环境。<br/>
+    "
+
+"This part of extension allows quick and simple creation as well as management of product listings on eBay.
+        You will significantly reduce time required for listing maintenance using it.
+        <br/><br/><u>The main features are of M2E Pro eBay:</u><br/>
+        <ul class=""list"">
+        <li>automated synchronization of stock levels, pricing, and product details;</li>
+        <li>import of eBay Orders;</li>
+        <li>creation of Magento Orders based on imported eBay Orders;</li>
+        <li>automated feedback posting for buyers</li>
+        and many others.
+        </ul>","Questa parte di estensione consente una creazione rapida e semplice delle inserzioni di prodotti su eBay, nonché la relativa gestione.
+        In questo modo è possibile ridurre sensibilmente il tempo necessario per la gestione delle inserzioni.
+        <br/><br/><u>Funzionalità principali di M2E Pro eBay:</u><br/>
+        <ul class=""list"">
+        <li>sincronizzazione automatica dei livelli di scorte, dei prezzi e dei dettagli dei prodotti;</li>
+        <li>importazione di ordini eBay;</li>
+        <li>creazione di ordini Magento in base agli ordini eBay importati;</li>
+        <li>registrazione automatica dei feedback per gli acquirenti</li>
+        e molte altre.
+        </ul>"
+"Current %s %s are in <span style=\"text-decoration: underline;\">Beta</span> state and are provided free of charge. However, please be advised that upon the live version of the product release some monthly subscription fee will be introduced.</br>","当前的 %s %s 处于<span style=\"text-decoration: underline;\">测试</span> 状态并且提供免费服务。但是，请注意上线版本提供了一些月租型的产品应用。</br>"
+"<br/><b>Note:</b> M2E Pro v.5.x.x consists of %s.<br/>
+    %s
+    %s
+    <br/>
+    <hr style=""color:#D6D6D6""/><br/>
+    M2E Pro extension requires activation for its work.<br/><br/>
+    To get the License Key, click the <span style=""text-decoration: underline;"">Get License Key</span> link and follow the instructions.<br/>
+    When you got your License Key, press the <span style=""text-decoration: underline;"">Enter</span> button
+    and enter your License Key in appeared text field. Press the <span style=""text-decoration: underline;"">Confirm</span> button.<br/><br/>
+    <b>Note:</b> If you have not received the License Key, please contact us right away at %s.","<br/><b>Nota:</b> M2E Pro v.5.x.x consiste di %s.<br/>
+    %s
+    %s
+    <br>
+    <hr style=""color:#D6D6D6""/><br/>
+    L'estensione di M2E Pro richiede l'attivazione.<br/><br/>
+    Per ottenere il codice di licenza, fai clic sul collegamento <span style=""text-decoration: underline;"">Ottieni codice di licenza</span> e segui le istruzioni.<br/>
+    Una volta ottenuto il codice di licenza, premi il pulsante <span style=""text-decoration: underline;"">Invio</span>
+    e immetti il codice di licenza nel campo di testo visualizzato. Premi il pulsante <span style=""text-decoration: underline;"">Conferma</span>.<br/><br/>
+    <b>Nota:</b> se non hai ricevuto il codice di licenza, contattaci subito all'indirizzo %s."
