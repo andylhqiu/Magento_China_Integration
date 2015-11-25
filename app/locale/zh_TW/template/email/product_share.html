@@ -1,0 +1,22 @@
+{* 解釋模組
+
+該樣板中有用的值：
+  - name            收件人姓名
+  - email           收件人信箱
+  - product_name    產品名稱
+  - product_url     產品網址
+  - product_image   產品小圖片(75 px)地址
+  - message         寄件人自訂留言
+  - sender_name     寄件人姓名
+  - sender_email    寄件人信箱
+
+Use vars: {{var var_name}}
+*}<!--@subject {{var name}} 您好 @-->
+<!--@vars
+{"htmlescape var=$name":"Recipient Name",
+"var product_url":"Url for Product",
+"var product_name":"Product Name",
+"var message":"Sender Message"}
+@-->
+
+{{var name}} 您好，<br /><br />請看看<a href="{{var product_url}}">{{var product_name}}</a><br /><br />留言：<br />{{var message}}<br /><br />

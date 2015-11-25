@@ -1,0 +1,43 @@
+<!--@subject 電子報訂閱確認 @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"var logo_url":"Email Logo Image Url",
+"var logo_alt":"Email Logo Image Alt",
+"htmlescape var=$customer.name":"Customer Name",
+"var subscriber.getConfirmationLink()":"Subscriber Confirmation Url"}
+@-->
+<!--@styles
+body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+@-->
+
+<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
+    <table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
+        <tr>
+            <td align="center" valign="top">
+                <!-- [ header starts here] -->
+                <table cellspacing="0" cellpadding="0" border="0" width="650">
+                    <tr>
+                        <td valign="top">
+                            <p><a href="{{store url=""}}" style="color:#1E7EC8;"><img src="{{skin url="images/logo.png" _area='frontend'}}" alt="{{var logo_alt}}" border="0"/></a></p></td>
+                    </tr>
+                </table>
+
+                <!-- [ middle starts here] -->
+                <table cellspacing="0" cellpadding="0" border="0" width="650">
+                    <tr>
+                        <td valign="top">
+                            <p><strong>您好，{{htmlescape var=$customer.name}}</strong>：<br/>
+                                感謝您訂閱我們的電子報。</p>
+                            <p style="border:1px solid #BEBCB7; padding:13px 18px; background:#F8F7F5; ">請點選下面的連結確認訂閱：<br />
+                                <a href="{{var subscriber.getConfirmationLink()}}" style="color:#1E7EC8;">{{var subscriber.getConfirmationLink()}}</a><p>
+
+                            <p>再次感謝！<br/><strong><a href="{{store url=""}}" style="color:#1E7EC8;">{{var store.getFrontendName()}}</a></strong></p>
+
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
