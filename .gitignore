@@ -1,3 +1,4 @@
 .modman
 .project
 .settings
+var/session
