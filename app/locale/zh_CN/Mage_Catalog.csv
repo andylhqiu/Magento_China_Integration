@@ -125,7 +125,10 @@ Buy %1$s,购买 %1$s
 Buy %1$s for,购买 %1$s：
 Buy %1$s for %2$s,为 %2$s 购买 %1$s
 Buy %1$s for %2$s (%3$s incl. tax) each,为每 %2$s（%3$s 含税）购买 %1$s
-Buy %1$s for %2$s each,为每 %2$s 购买 %1$s
+Buy %1$s for %2$s each,购买 %1$s件每件低至%2$s
+and save,即节省
+Buy %1$s for %2$s each and save,购买 %1$s件每件低至%2$s，共优惠
+Buy %1$s for %2$s each and save %3$s,购买 %1$s件每件低至%2$s，共优惠%3$s
 Cache Lifetime (Seconds),缓存生存时间（秒）
 Cache refresh needed.,需要刷新缓存。
 Can be Divided into Multiple Boxes for Shipping,可拆分为多个箱发货
@@ -628,7 +631,7 @@ Set Root Category for Store,为店铺选择根分类
 Set special price,设置特殊价格
 Set/Get current store view,设置/获取当前店铺视图
 Settings,设置
-Shop By,购物
+Shop By,选购
 Shopping Options,购物选项
 Show,显示
 Show Autocomplete Results Count,显示自动完成结果数
