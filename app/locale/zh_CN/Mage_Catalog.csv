@@ -123,12 +123,9 @@ Browse By,浏览者：
 Bundle Items,捆绑项
 Buy %1$s,购买 %1$s
 Buy %1$s for,购买 %1$s：
-Buy %1$s for %2$s,为 %2$s 购买 %1$s
-Buy %1$s for %2$s (%3$s incl. tax) each,为每 %2$s（%3$s 含税）购买 %1$s
-Buy %1$s for %2$s each,购买 %1$s件每件低至%2$s
-and save,即节省
-Buy %1$s for %2$s each and save,购买 %1$s件每件低至%2$s，共优惠
-Buy %1$s for %2$s each and save %3$s,购买 %1$s件每件低至%2$s，共优惠%3$s
+Buy %1$s for %2$s,购买 %1$s件低至 %2$s
+Buy %1$s for %2$s (%3$s incl. tax) each,购买 %1$s件低至%2$s每件（%3$s 含税）
+Buy %1$s for %2$s each,购买 %1$s件低至%2$s每件
 Cache Lifetime (Seconds),缓存生存时间（秒）
 Cache refresh needed.,需要刷新缓存。
 Can be Divided into Multiple Boxes for Shipping,可拆分为多个箱发货
@@ -820,7 +817,7 @@ Zoom Out,缩小
 and,和
 and above,及以上
 categories,类别
-each,每个
+each,每件
 ex. http://domain.com,例如 http://domain.com
 leave blank if its not an image,如果非图片请留空
 per page,每页
